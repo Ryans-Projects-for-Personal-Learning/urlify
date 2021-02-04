@@ -43,6 +43,3 @@ def urlify(title):
     result = url.replace(" ","-")
     
     return result
-    
-
-print(urlify("Webinaire: l'histoire ancien de l'États-unis et du bœuf?"))
