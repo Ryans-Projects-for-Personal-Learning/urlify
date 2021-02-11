@@ -1,3 +1,5 @@
+#This is the python version of the script. You may also use this if you prefer that instead.
+
 def urlify(title):
     
     #makes url lower case
