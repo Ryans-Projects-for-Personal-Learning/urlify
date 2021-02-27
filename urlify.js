@@ -7,8 +7,8 @@ function urlify(){
 
     unsafeChars = ['"', '#', '$', '%', '&', '+',
                     ',', '/', ':', ';', '=', '?',
-                    '@', '[', '\\', ']', '^', '`', '’',
-                    '{', '|', '}', '~', "'", "«", "»"]
+                    '@', '[', '\\', ']', '^', '`', "'", 
+                    "!", '{', '|', '}', '~', "'", "«", "»"]
     
 
     accentChars = {
@@ -32,7 +32,7 @@ function urlify(){
 
     for (var i = 0; i < loweredTitle.length; i++){
         //Checks if the character is considered unsafe
-        if(loweredTitle[i] in unsafeChars){
+        if(unsafeChars.includes(loweredTitle[i])){
             if(loweredTitle.indexOf(loweredTitle[i]) == loweredTitle.length - 1){
                 break;
             }
