@@ -9,11 +9,13 @@
 </head>
 <body>
     <div class="urlifyDiv">
-    <label id="title">Title</label>
-    <input type="text" id="titleInput" name="titleInput" size="100"><br><br>
-    <label id="url">URL:</label>
-    <input type="text" id="urlOutput" name="urlOutput" size="100" readonly><br><br>
-    <button type="submit" value="Generate" onClick="urlify()">Generate</button>
+    <p class="title">URLify</p>
+    INSTRUCTIONS: Enter the title you would like to generate a slug for and the result will appear in the line below it.</p>
+    <b><label class="InputTitle"></label>Title</label></b><br>
+    <input type="text" id="titleInput" name="titleInput"><br><br>
+    <b><label id="url">Result</label></b><br>
+    <input type="text" id="urlOutput" name="urlOutput" readonly><br><br>
+    <button class="generate" type="submit" value="Generate" onClick="urlify()">Generate</button>
 </div>
     <script src = "urlify.js" async defer></script>
 </body>
